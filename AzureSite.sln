@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSite", "AzureSite\AzureSite.csproj", "{488A3FAD-6944-42A3-A7CD-A0BF2FD35951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSite", "AzureSite\AzureSite.csproj", "{488A3FAD-6944-42A3-A7CD-A0BF2FD35951}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86C18263-1CCF-4642-ADFC-992B46B8F564} = {86C18263-1CCF-4642-ADFC-992B46B8F564}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Currency", "..\..\..\Desktop\OOP2\OOP2CurrencyTestFirst\sprint-3-currency-test-first-DavidJNichol\CurrencySprint2Stub\Currency\Currency.csproj", "{86C18263-1CCF-4642-ADFC-992B46B8F564}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{488A3FAD-6944-42A3-A7CD-A0BF2FD35951}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{488A3FAD-6944-42A3-A7CD-A0BF2FD35951}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{488A3FAD-6944-42A3-A7CD-A0BF2FD35951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C18263-1CCF-4642-ADFC-992B46B8F564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C18263-1CCF-4642-ADFC-992B46B8F564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C18263-1CCF-4642-ADFC-992B46B8F564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C18263-1CCF-4642-ADFC-992B46B8F564}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

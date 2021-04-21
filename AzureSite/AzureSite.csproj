@@ -8,4 +8,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\OOP2\OOP2CurrencyTestFirst\sprint-3-currency-test-first-DavidJNichol\CurrencySprint2Stub\Currency\Currency.csproj" />
+  </ItemGroup>
+
 </Project>
