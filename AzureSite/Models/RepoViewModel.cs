@@ -14,6 +14,7 @@ namespace AzureSite.Models
         public RepoViewModel(ICurrencyRepo repo)
         {
             this.repo = repo;
+            this.repo.Coins = new List<ICoin>();
         }
 
         public decimal TotalValue

@@ -24,14 +24,20 @@ namespace AzureSite.Controllers
             this._logger = logger;
             repo = new USCurrencyRepo();
             vm = new RepoViewModel(repo);
+            //vm.Coins.Add(new Penny());
         }
 
-        [Route("{Amount:Int}")]
+        public IActionResult MakeChange()
+        {
+            return View(vm);
+        }
+
         [HttpPost]
-        public IActionResult MakeChange(int Amount)
+        [ValidateAntiForgeryToken]
+        public IActionResult MakeChange(IFormCollection form)
         {
             decimal amount;
-            amount = Convert.ToDecimal(Amount);
+            amount = Convert.ToDecimal(form["Amount"]);
             vm.MakeChange(amount);
 
             return View(vm);

@@ -5,11 +5,7 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<h2>Amount:</h2>
-@using (Html.BeginForm("MakeChange", "Currency", FormMethod.Post))
-{
-    <input type="text" name="Amount" id="Amount"/>
-}
 
-<p><a asp-area="" asp-controller="Currency" asp-action="MakeChange">Make Change</a></p>
+
+
 

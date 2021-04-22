@@ -4,6 +4,14 @@
     ViewData["Title"] = "MakeChange";
 }
 
+
+<h2>Amount:</h2>
+@using (Html.BeginForm("MakeChange", "Currency", FormMethod.Post))
+{
+    <input type="text" name="Amount" id="Amount" />
+    <input type="submit" name="submitButton" />
+}
+
 <h1>MakeChange</h1>
 
 <table class="table">
@@ -16,12 +24,13 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Coins) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Coins)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
